@@ -1,0 +1,4 @@
+rootProject.name = 'ITP'
+
+include 'itp-core'
+include 'itp-admin'

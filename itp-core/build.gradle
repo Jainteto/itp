@@ -1,0 +1,45 @@
+group 'org.jainteto.itp'
+version '1.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+jar {
+    baseName = 'itp-core'
+    version = '1.0.0-SNAPSHOT'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    /* Log4j 2 */
+    compile("org.apache.logging.log4j:log4j-api:2.3")
+    compile("org.apache.logging.log4j:log4j-core:2.3")
+
+    /* Log4j Bridges */
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-1.2-api', version: '2.3'
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-jcl', version: '2.3'
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.3'
+
+    /* Log4j Adapters */
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-jul', version: '2.3'
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-to-slf4j', version: '2.3'
+
+    /* Log4j Appenders */
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-nosql', version: '2.3'
+
+    /* Log4j IO Streams */
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-iostreams', version: '2.3'
+
+    /* Tests */
+    testCompile("junit:junit:4.11")
+    testCompile('org.mockito:mockito-core:2.0.31-beta')
+
+}
